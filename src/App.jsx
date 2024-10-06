@@ -248,7 +248,7 @@ const CheckURL = () => {
     dispatch({ type: 'SET_LOADING', payload: true });
     dispatch({ type: 'SET_ERROR', payload: null });
     try {
-      const response = await fetch('https://phishing-urls-pred-api.onrender.com/predict', {
+      const response = await fetch('https://phishing-urls-pred-api-lyw2.onrender.com/predict', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
